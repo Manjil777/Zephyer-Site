@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600&family=Raleway:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Raleway';
+}
+
+#hero-section{
+  width: 100%;
+  height: calc(100% - 181px);
+  display: flex;
+}
+.left{
+  height: 100%;
+  width: 49%;
+}
+.left h2{
+  text-align: center;
+  color: #303030;
+  font-family: Raleway;
+  font-size: 1.7vw;
+  font-weight: 600;
+  padding-top: 7vw;
+}
+.left p{
+  color: #818181;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 0.9vw;
+  font-weight: 400;
+  line-height: 2.2vw;
+  padding-top: 4vw;
+}
+.btn {
+  width: 14.19vw;
+  height: 3.20vw;
+  border-radius: 7px;
+  border: 2.5px solid #303030;
+  background: #FFF;
+  position: relative;
+  top: 2vw;
+  left: 16.9vw;
+}
+.btn span{
+  color: #303030;
+  text-align: center;
+  font-family: Raleway;
+  font-size:1.08vw;
+  font-weight: bold;
+  line-height: 21px;
+  letter-spacing: 2.66px;
+}
+.right{
+  height: 100%;
+  width: 51%;
+}
+.frame{
+  width: 726px;
+  height: 447px;
+  background-image: url(/book/about-sec-icon\ 1.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: contain;
+  position: relative;
+  top: 7vw;
+  left: 2vw;
+  filter: grayscale(100%);
+}
+.frame:hover{
+  filter: grayscale(0%);
+}
+
+/* Celebrity edit */
+
+#celebrity{
+  width: 100%;
+}
+#celebrity h1{
+  width: 195px;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 4.56px;
+  margin-top: 96px;
+  margin-bottom: 118px;
+  position: relative;
+  left: 11vw;
+}
+.celebrity-container{
+  max-width: 1124px;
+  display: grid;
+  grid-template-columns: repeat(6,169px);
+  gap: 2vw;
+  row-gap: 8vw;
+  position: relative;
+  left: 11vw;
+}
+.celebrity-container > .items{
+  width: 169px;
+  height: 246px;
+}
+.items img {
+  object-fit: cover;
+  width: 169px;
+  height: 167.58px;
+  border: 1px solid #000;
+}
+
+.items h6{
+  color: #000000;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 0.6vw;
+  letter-spacing: 0.20vw;
+  line-height: 1.62vw;
+  padding-top: 1.5vw;
+}
+.job p{
+  background-color: #000000;
+  width: 6.12vw;
+  height: 1.48vw;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.77vw;
+  line-height: 1.62vw;
+  letter-spacing: 0.14vw;
+  position: relative;
+  top:1.5vw;
+  left: 2.4vw;
+}
+.lets_go{
+  display: none;
+}
+
+/* Books recomendation  css */
+
+#reco{
+  width: 100%;
+}
+#reco h1{
+  color: #3F465E;
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 4.56px;
+  margin-top: 12vw;
+  margin-left: 11vw;
+  margin-bottom: 118px;
+}
+.repo-container{
+  max-width: 1124px;
+  display: grid;
+  grid-template-columns: repeat(6,169px);
+  gap: 2vw;
+  position: relative;
+  left: 11vw;
+}
+.repo-container >.books_repo{
+  width: 169px;
+  height: 359px;
+  background: #FFF;
+  border: 0.5px solid rgba(0, 0, 0, 0.17);
+}
+.books_repo img {
+  width: 139px;
+  height: 182px;
+  border-radius: 3px;
+  border: 1px solid #000;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: relative;
+  top: 3vw;
+  left: 0.8vw;
+}
+.books_repo h6{
+  color: #303030;
+  text-align: center;
+  font-size: 0.6vw;
+  font-style: normal;
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 2.66px;
+  position: relative;
+  top: 5vw;
+
+}
+.auth p{
+  color: #818181;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 1.9px;
+  position: relative;
+  top: 8vw;
+}
+
+@media (max-width:1500px) {
+  .frame{
+    width: 48.4vw;
+    height: 29.4vw;
+    background-size: contain;
+  }
+  #celebrity{
+    margin-top: 500px;
+  }
+}
+@media (max-width:1285px) {
+  .celebrity-container{
+    max-width: 934px;
+    grid-template-columns: repeat(5,169px);
+  }
+  .items h6{
+    font-size: 12px;
+  }
+  .job p{
+    font-size: 12px;
+    left: 4vw;
+    width: 8vw;
+  }
+  .repo-container{
+    max-width: 934px;
+    grid-template-columns: repeat(5,169px);
+  }
+  .books_repo h6{
+    font-size: 12px;
+  }
+  .auth p{
+    font-size: 12px;
+    left: 4vw;
+    width: 8vw;
+  }
+  footer{
+    margin-top: 300px;
+  }
+}
+@media (max-width:1045px) {
+  .celebrity-container{
+    max-width: 734px;
+    grid-template-columns: repeat(4,169px);
+  }
+  .repo-container{
+    max-width: 734px;
+    grid-template-columns: repeat(4,169px);
+  }
+}
+@media (max-width:815px) {
+  .celebrity-container{
+    max-width: 554px;
+    grid-template-columns: repeat(3,169px);
+    left: 12vw;
+  }
+  #celebrity h1{
+    margin-top: 0;
+    left: 3vw;
+  }
+  .left p{
+    font-size: 12px;
+    line-height: 2.9vw;
+  }
+  .btn{
+    border-radius: 4px;
+  }
+  .job p{
+    font-size: 12px;
+    left: 5.5vw;
+    width: 10vw;
+  }
+  .repo-container{
+    max-width: 554px;
+    grid-template-columns: repeat(3,169px);
+    left: 12vw;
+  }
+  #reco h1{
+    margin-top: 0;
+    left: 3vw;
+  }
+  .auth p{
+    font-size: 12px;
+    left: 5.5vw;
+    width: 10vw;
+  }
+}
+@media screen and (max-width:625px) {
+  .celebrity-container{
+    max-width: 364px;
+    grid-template-columns: repeat(2,169px);
+  }
+  .job p{
+    font-size: 12px;
+    left: 7.5vw;
+    width: 12vw;
+    height: 2.4vw;
+    padding: 0.5vw;
+  }
+  .repo-container{
+    max-width: 364px;
+    grid-template-columns: repeat(2,169px);
+  }
+  .auth p{
+    font-size: 12px;
+    left: 7.5vw;
+    width: 12vw;
+    height: 2.4vw;
+    padding: 0.5vw;
+  }
+  #reco{
+    margin-bottom: 500px; 
+  }
+}
+@media (max-width:625px) {
+  #celebrity{
+    position: relative;
+    top: 100%;
+  }
+  #celebrity h1{
+    margin-top: 5vw;
+  }
+  #reco{
+    position: relative;
+    top: 100%;
+  }
+  #reco h1{
+    margin-top: 20vw;
+  }
+}
+
+@media (max-width:434px) {
+
+  #celebrity{
+    position: relative;
+    top: 100%;
+  }
+  .celebrity-container{
+    max-width: 174px;
+    grid-template-columns: repeat(1,169px);
+    left: 25vw;
+  }
+  .celebrity-container .items{
+    height: 307px;
+    width: 221px;
+  }
+  .items img {
+    height: 209px;
+    width: 221px;
+  }
+  .items h6{
+    font-size: 14px;
+    margin: 5vw 0;
+  }
+  .job p{
+    font-size: 10px;
+    height: 18.35px;
+    width: 80.95px;
+    padding: 1.5vw;
+    margin: 6vw 12.5vw;
+    left: 3.5vw;
+  }
+  .items:nth-child(7), 
+  .items:nth-child(8), 
+  .items:nth-child(9), 
+  .items:nth-child(10), 
+  .items:nth-child(11), 
+  .items:nth-child(12) {
+    display: none;
+  }
+  #reco{
+    position: relative;
+    top: 120%;
+    margin-bottom: 600px;
+  }
+  #reco h1{
+    font-size: 20px;
+    margin-left: 3vw;
+  }
+  .repo-container{
+    max-width: 174px;
+    grid-template-columns: repeat(1,169px);
+    left: 25vw;
+    gap: 10vw;
+  }
+  .repo-container .books_repo{
+    height: 485px;
+    width: 229px;
+  }
+  .books_repo img {
+    height: 246px;
+    width: 187px;
+    left: 5.5vw;
+    top: 10vw;
+  }
+  .books_repo h6{
+    font-size: 14px;
+    margin: 5vw 0;
+    top: 20vw;
+  }
+  .auth p{
+    font-size: 10px;
+    height: 18.35px;
+    width: 130px;
+    top: 30vw;
+    left: 15vw;
+  }
+
+  .books_repo:nth-child(4), 
+  .books_repo:nth-child(5), 
+  .books_repo:nth-child(6){
+    display: none;
+  }
+
+  .lets_go{
+    width: 186px;
+    display: inline;
+    position: relative;
+    top: 5vw;
+    left: 4vw;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 4.56px;
+    /* margin-bottom: 7vw; */
+  }
+  .yellow a{
+    color: #FFC700;
+  }
+  .btn{
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width:600px) {
+  #hero-section{
+    flex-direction: column;
+    height: calc(100% - 129px);
+  }
+  .left{
+    width: 100%;
+  }
+  .left h2{
+    font-size: 4.533vw;
+
+  }
+  .left p{
+    font-size: 14px;
+    line-height: 7vw;
+    padding: 10vw;
+  }
+  .btn {
+    width: 41.33vw;
+    height: 9.6vw;
+    position: relative;
+    left: 30vw;
+  }
+  .btn span{
+    font-size: 3.467vw;
+    font-weight: bold;
+  }
+  .right{
+    width: 100%;
+  } 
+  .frame{
+    height: 63.33vw;
+    width: 70vw;
+    top: 47vh;
+    left: 10%;
+  }
+}
+
+/*footer  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+.container_foot{
+  max-width: 1170px;
+  /* background-color: red; */
+  margin: auto;
+}
+.side{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+footer{
+  background-color: #262626;
+  padding: 70px 0;
+  margin-top: 225px;
+}
+.references{
+  width: auto;
+  display: flex;
+  justify-content: end;
+  padding-right: 39px;
+}
+.references a{
+  position: relative;
+  /* right: 0; */
+  bottom: 37px;
+  color: rgba(185, 185, 185, 0.42);
+  text-decoration: none;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 21px;
+  font-variant: all-small-caps;
+  letter-spacing: 1.82px;
+  cursor: pointer;
+}
+.footer-items{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-items h4{
+  color: #FFF;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 1.4px;
+  /* margin-top: 1.4vw; */
+  margin-bottom: 39px;
+}
+.main_box{
+  margin-bottom: 21px;
+  margin-top: -20px;
+  height: 58px;
+  width: 200px;
+  border: 2.5px solid #E9E9E9;
+}
+.main_box .logia{
+  font-size: 34px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 15px;
+
+}
+.footer-items li{
+  color: rgba(185, 185, 185, 0.42);
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px; /* 161.538% */
+  letter-spacing: 0.91px;
+  margin-bottom: 39px;
+}
+.footer-items p{
+  color: rgba(185, 185, 185, 0.42);
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.91px;
+}
+.footer-items ul li:hover{
+  color: #FFF;
+  padding-left: 8px;
+}
+.two span{
+  color: #E9E9E9;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 1.12px;
+}
+.copyright{
+  height: 67px;
+  width: 100%;
+  background: #1B1B1B;
+  position: absolute;
+}
+.copyright p{
+  color: rgba(185, 185, 185, 0.35);
+  font-family: Raleway;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0.91px;
+  padding-top: 18px;
+  width: auto;
+}
+
+/* responsive */
+@media(max-width:850px){
+  .footer-items{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width:574px){
+  .footer-items{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
